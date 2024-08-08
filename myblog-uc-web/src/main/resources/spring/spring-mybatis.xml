@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration SYSTEM "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<!-- - - - - - - 懒加载和缓存 - - - - - - - - - - -->
+	<settings>
+		<setting name="cacheEnabled" value="false" />
+		<!-- 若为true导致部分entity被CGLib代理 -->
+		<setting name="lazyLoadingEnabled" value="false" />
+		<setting name="aggressiveLazyLoading" value="false" />
+		<setting name="logImpl" value="STDOUT_LOGGING" />
+		<setting name="callSettersOnNulls" value="true"/>
+	</settings>
+	<!-- - - - - - - - 物理分页拦截器 - - - - - - - -->
+<!-- 	<plugins> -->
+<!-- 		<plugin interceptor="ibator.dialect.tool.ResultSetInterceptor" /> -->
+<!-- 		<plugin interceptor="ibator.dialect.tool.StatementInterceptor"> -->
+<!-- 			<property name="dialect" value="ibator.dialect.MySQLDialect" /> -->
+<!-- 		</plugin> -->
+<!-- 	</plugins> -->
+	<!-- - - - - - - -映射文件路径- - - - - - -->
+</configuration>
