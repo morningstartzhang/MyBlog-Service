@@ -5,15 +5,17 @@
     <parent>
         <groupId>com.lovesh</groupId>
         <artifactId>myblog-service</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>1.0.0</version>
     </parent>
 
     <artifactId>myblog-base</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>myblog-base</name>
     <description>myblog-base</description>
 
     <dependencies>
+
+
 
     </dependencies>
 

@@ -21,8 +21,8 @@
         </commentGenerator>
 <!--        jdbc的数据库连接，以下为MySQL版本8以上的JDBC驱动-->
         <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
-                        connectionURL="jdbc:mysql://127.0.0.1:3306/uc_db?characterEncoding=UTF-8&amp;tinyInt1isBit=false&amp;serverTimezone=GMT%2b8"
-                        userId="root" password="123456">
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/myblog?characterEncoding=UTF-8&amp;tinyInt1isBit=false&amp;serverTimezone=GMT%2b8"
+                        userId="root" password="12345678">
             <property name="nullCatalogMeansCurrent" value="true"/>
         </jdbcConnection>
 <!--        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"-->

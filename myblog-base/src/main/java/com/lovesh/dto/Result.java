@@ -2,10 +2,6 @@ package com.lovesh.dto;
 
 import java.io.Serializable;
 
-/**
- * @author zdm
- * @Date 2023/09/08
- */
 public class Result<T> implements Serializable {
 
     private Integer code;

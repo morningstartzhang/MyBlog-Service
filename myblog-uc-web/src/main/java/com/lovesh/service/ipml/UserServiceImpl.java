@@ -6,7 +6,6 @@ import com.lovesh.entity.UserExample;
 import com.lovesh.service.IUserService;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 /**
@@ -16,8 +15,12 @@ import java.util.List;
 @Component
 public class UserServiceImpl implements IUserService {
 
-    @Resource
-    private UserMapper userMapper;
+
+    private final  UserMapper userMapper;
+
+    public UserServiceImpl(UserMapper userMapper) {
+        this.userMapper = userMapper;
+    }
 
     @Override
     public List<User> getAllUser(){
