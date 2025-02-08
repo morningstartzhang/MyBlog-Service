@@ -2,7 +2,6 @@ package com.lovesh.service.ipml;
 
 import com.lovesh.dao.UserMapper;
 import com.lovesh.entity.User;
-import com.lovesh.entity.UserExample;
 import com.lovesh.service.IUserService;
 import org.springframework.stereotype.Component;
 
@@ -16,7 +15,8 @@ import java.util.List;
 public class UserServiceImpl implements IUserService {
 
 
-    private final  UserMapper userMapper;
+    private final UserMapper userMapper;
+
 
     public UserServiceImpl(UserMapper userMapper) {
         this.userMapper = userMapper;
@@ -24,6 +24,6 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public List<User> getAllUser(){
-        return userMapper.selectByExample(new UserExample());
+        return userMapper.getAllUser();
     }
 }

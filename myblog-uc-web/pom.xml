@@ -14,7 +14,7 @@
     <name>myblog-uc-web</name>
     <description>myblog-uc-web</description>
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>21</java.version>
     </properties>
     <dependencies>
 
@@ -31,16 +31,26 @@
             <version>1.0.0</version>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-data-redis</artifactId>-->
+<!--        </dependency>-->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+
 
     </dependencies>
 
     <build>
         <plugins>
             <plugin>
+                <configuration>
+                    <finalName>uc</finalName><!-- 打包后的war名称-->
+                </configuration>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>

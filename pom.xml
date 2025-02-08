@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.10</version>
+        <version>3.2.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.lovesh</groupId>
@@ -23,7 +23,7 @@
         <module>myblog-data</module>
         <module>myblog-uc-web</module>
         <module>myblog-base</module>
-        <module>myblog-generator</module>
+<!--        <module>myblog-generator</module>-->
         <module>myblog-uic</module>
     </modules>
 
@@ -52,20 +52,5 @@
 
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin><!--编译跳过测试文件检查的生命周期-->
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

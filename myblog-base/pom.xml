@@ -10,6 +10,7 @@
 
     <artifactId>myblog-base</artifactId>
     <version>1.0.0</version>
+    <packaging>jar</packaging>
     <name>myblog-base</name>
     <description>myblog-base</description>
 
@@ -19,13 +20,5 @@
 
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
